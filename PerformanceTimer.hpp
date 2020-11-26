@@ -22,9 +22,6 @@ public:
 		{
 			m_end = std::chrono::high_resolution_clock::now();
 			m_elapsed = std::chrono::time_point<std::chrono::nanoseconds>(m_end - m_start);
-		}
-		else
-		{
 			m_wasStopped = true;
 		}
 	};
